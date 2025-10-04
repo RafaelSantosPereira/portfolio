@@ -1,0 +1,130 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  
+}
+
+body {
+  background: linear-gradient(180deg, #121212 0%, #1a1a2e 100%);
+  color: #E0E0E0;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+  background: #121212;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  border-bottom: 2px solid rgb(59, 130, 246);
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links {
+  font-size: 1.3rem;  
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #CFCFCF;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: rgb(59, 130, 246);
+}
+
+.hero {
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  text-align: center;
+}
+
+
+
+.hero h1 {
+  font-weight: 400;
+  font-size: 6rem;
+  color: #E0E0E0;
+  display: inline-block;
+  margin: 0;
+  line-height: 1; 
+  position: relative;
+}
+
+.hero h2 {
+  font-weight: 200;
+  font-size: 3em;
+  color: rgb(59, 130, 246);
+  display: block;
+  text-align: right;
+  margin: 0;
+  position: relative;
+ 
+}
+
+
+/* Conteúdo */
+.section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Projetos */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  background: #1E1E2E;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.project-card:hover {
+  background: #2A2A40;
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1E1E2E;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* ---- Animação Scroll ---- */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
