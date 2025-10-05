@@ -82,10 +82,13 @@ header {
 
 /* Conteúdo */
 .section {
-  margin: 20rem auto 0 auto;
+  margin: auto;
   display: flex;  
   flex-direction: column;
+  min-height: 100vh;
   max-width: 90%;
+  align-items: center;
+  justify-content: center;
 }
 
 h2 {
