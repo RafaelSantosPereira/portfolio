@@ -6,6 +6,9 @@
   font-family: "Segoe UI", sans-serif;
   
 }
+html, body {
+  scroll-behavior: smooth;
+}
 
 body {
   background: linear-gradient(180deg, #121212 0%, #1a1a2e 100%);
