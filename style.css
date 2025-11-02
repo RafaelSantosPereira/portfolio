@@ -31,6 +31,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  
 }
 
 .nav-links {
@@ -38,6 +39,7 @@ header {
   list-style: none;
   display: flex;
   gap: 20px;
+  
 }
 
 .nav-links a {
